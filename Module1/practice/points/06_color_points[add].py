@@ -38,8 +38,8 @@ points = [
 #     if p.color == "green":
 #         green_points.append(p)
 
-red_points = (list)(filter(lambda p: p.color == "red", points))
-green_points = (list)(filter(lambda p: p.color == "green", points))
+red_points = list(filter(lambda p: p.color == "red", points))
+green_points = list(filter(lambda p: p.color == "green", points))
 
 red_s = 0.5 * ((red_points[1].x - red_points[0].x) * (red_points[2].y - red_points[0].y) - (red_points[2].x - red_points[0].x) * (red_points[2].y - red_points[1].y))
 green_s = 0.5 * ((green_points[1].x - green_points[0].x) * (green_points[2].y - green_points[0].y) - (green_points[2].x - green_points[0].x) * (green_points[2].y - green_points[1].y))
