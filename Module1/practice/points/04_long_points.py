@@ -18,7 +18,7 @@ points = [Point(2, 7), Point(12, 7), Point(5, -2), Point(10, -16), Point(-12, 0)
 
 point0 = Point(0, 0)
 
-max_dist = 0
+max_dist = -1
 for p in points:
     dist = p.dist_to(point0)
     if dist > max_dist:
