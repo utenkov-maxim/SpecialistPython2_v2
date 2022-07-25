@@ -7,9 +7,8 @@ def distance(p1, p2):
     """
     # TODO: напишите тело функции
 
-    # AB = √(xb - xa)2 + (yb - ya)2
-
-    return math.sqrt((p2["x"] - p1["x"]) * (p2["x"] - p1["x"]) + (p2["y"] - p1["y"]) * (p2["y"] - p1["y"]))
+    # return math.sqrt((p2["x"] - p1["x"]) * (p2["x"] - p1["x"]) + (p2["y"] - p1["y"]) * (p2["y"] - p1["y"]))
+    return math.sqrt((p2["x"] - p1["x"]) ** 2 + (p2["y"] - p1["y"]) ** 2)
 
 
 # Даны две точки на координатной плоскости
