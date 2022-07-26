@@ -1,12 +1,22 @@
 # Начнем с создания карты
+
+
 class Card:
+
+
     def __init__(self, value, suit):
         self.value = value  # Значение карты(2, 3... 10, J, Q, K, A)
         self.suit = suit  # Масть карты
 
     def to_str(self):
+        # Diamonds    Бубны '\u2666'
+        # Hearts  Червы     '\u2665'
+        # Spades  Пики      '\u2660'
+        # Clubs   Трефы     '\u2663'
+
         # TODO-1: метод возвращает строковое представление карты в виде: 10♥ и A♦
-        ...
+        suits = {'Diamonds': '\u2666', 'Hearts': '\u2665', 'Spades': '\u2660', 'Clubs': '\u2663'}
+        return f"{self.value}{suits[self.suit]}"
 
 
 # Создадим несколько карт
