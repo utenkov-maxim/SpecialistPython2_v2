@@ -32,7 +32,6 @@ books_catalog = [
 ]
 
 # TODO-1: Выведите нумерованный список книг, используя для каждой книги ее строковое представление(метод .to_str())
-i = 0
-for item in books_catalog:
-    i += 1
+
+for i, item in enumerate(books_catalog, 1):
     print(f'{i}. {item.to_str()}')

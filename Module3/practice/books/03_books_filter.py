@@ -38,9 +38,7 @@ surname = input("Фамилия автора: ")
 filtered_books = [book for book in books_catalog if book.author.surname.lower() == surname.lower()]
 
 if len(filtered_books) != 0:
-    i = 0
-    for book in filtered_books:
-        i += 1
-        print(f"{i}. {book.to_str()}")
+    for i, item in enumerate(filtered_books, 1):
+        print(f'{i}. {item.to_str()}')
 else:
     print("Книги не найдены")
